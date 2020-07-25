@@ -1,4 +1,4 @@
-# MNIST_Dataset_Analysis_using_Keras
+# MNIST Dataset Analysis using Keras
 The following repo contains the Python code for an assignment which was based on conducting specific analysis using Keras on the MNIST Dataset.
 
 # 1. (Part 1): Program a network in Keras with a triplet loss function.
