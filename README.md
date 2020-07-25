@@ -1,7 +1,7 @@
 # MNIST_Dataset_Analysis_using_Keras
 The following repo contains the Python code for an assignment which was based on conducting specific analysis using Keras on the MNIST Dataset.
 
-#1. (Part 1): Program a network in Keras with a triplet loss function.
+# 1. (Part 1): Program a network in Keras with a triplet loss function.
 
 ## Steps
 
@@ -21,32 +21,32 @@ The following repo contains the Python code for an assignment which was based on
 
 - A further complication is that our triplet loss can't be calculated as a function of y_true and y_predicted as usual. Instead we calculate the triplet loss as an extra Lambda layer. Then the Model's loss is set to be equal to the triplet loss via the identity function.
 
-#2. (Part 2): Train the network on the MNIST data
+# 2. (Part 2): Train the network on the MNIST data
 
-#3. (Part 3): Report the value of the loss function over time.
+# 3. (Part 3): Report the value of the loss function over time.
 
 - Used a plot to model loss over time acorss 5 epochs.
 
 -  added an extra 28 pixels to allow for images whose bottom-left is at the top or right border.
 
-#4. (Part 4): Program a recognition function: given a new image, it should recognize the image as a digit (and which digit) or report (e.g. if the image is a letter, instead of a digit) that it is unknown.
+# 4. (Part 4): Program a recognition function: given a new image, it should recognize the image as a digit (and which digit) or report (e.g. if the image is a letter, instead of a digit) that it is unknown.
 
 - Reload the datasets to make own database for our digit recognition. 
 
 - Convert to encoding for the digits.
 
-#5 (Part 5): Test the network with (unseen) images of letters (not numbers), to demonstrate that it works in this case.
+# 5 (Part 5): Test the network with (unseen) images of letters (not numbers), to demonstrate that it works in this case.
 
 - Load unseen data and encode
 
-#6. (Part 6): Find any pre-trained deep convolutional neural network face model on the internet which uses an embedding, a Siamese network, or a similar approach which allows you to carry out the final tasks as follows.
+# 6. (Part 6): Find any pre-trained deep convolutional neural network face model on the internet which uses an embedding, a Siamese network, or a similar approach which allows you to carry out the final tasks as follows.
 
 - For the following, i had the files vgg_face_weights.h5 and the six images ('joly1.jpg','s1.jpg','joly2.jpg','joly3.jpg','s3.jpg','s2.jpg') stored on my google drive. To run these just store them in the directory and remove the "gdrive/My Drive/". The links for these files are the following:
 
 - vgg_face_weights.h5: https://drive.google.com/uc?id=1CPSeum3HpopfomUEK1gybeuIVoeJT_Eo&export=download
 - images.zip: https://drive.google.com/file/d/1p8QlRSm4f7muWCSKM8R-KlsNMfCZMLf1/view?usp=sharing
 
-#7 (Paer 7): Used the output model (possibly after removing some final layers) to make face clusters, i.e. ran a clustering algorithm so that multiple pictures of the same person are in the same cluster. This can run on any face dataset, whether open/public. For each image in the dataset we clustered, we pre-computed its embedding, and then worked with the embeddings. We didn't run all the images through the network at every step of the clustering algorithm.
+# 7 (Paer 7): Used the output model (possibly after removing some final layers) to make face clusters, i.e. ran a clustering algorithm so that multiple pictures of the same person are in the same cluster. This can run on any face dataset, whether open/public. For each image in the dataset we clustered, we pre-computed its embedding, and then worked with the embeddings. We didn't run all the images through the network at every step of the clustering algorithm.
 
  - Please see the ipynb file for our VGG Face model. It is based off of the following pdf with help from the GITHUB below.
 - http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf
