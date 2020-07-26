@@ -1,4 +1,7 @@
 # MNIST Dataset Analysis using Keras
+
+Completed during the MSc Computer Science - Data Analytics
+
 The following repo contains the Python code for building a Deep Face Recognition Model that aimed to classify facial images from the MNIST Dataset. Analysis conducted using Keras.
 
 ## Objectives:
