@@ -13,10 +13,8 @@ The following repo contains the Python code for building a Deep Face Recognition
 - Part 6: Find any pre-trained deep convolutional neural network face model on the internet which uses an embedding, a Siamese network, or a similar approach which allows you to carry out the final tasks as follows.
 - Part 7: Used the output model (possibly after removing some final layers) to make face clusters, i.e. ran a clustering algorithm so that multiple pictures of the same person are in the same cluster. This can run on any face dataset, whether open/public. For each image in the dataset we clustered, we pre-computed its embedding, and then worked with the embeddings. We didn't run all the images through the network at every step of the clustering algorithm.
 
- - Please see the ipynb file for our VGG Face model. It is based off of the following pdf with help from the GITHUB below.
-- http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf
-- https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3
-
+ - Please see the ipynb file for our VGG Face model. 
+ 
 ## Model overview
 - Our model has 22 layers and 37 deep units.
 - We used the Sequential Keras model, which is a linear stack of layers
